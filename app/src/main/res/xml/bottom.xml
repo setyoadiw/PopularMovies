@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_popular"
+        icon="@drawable/ic_home_black_24dp"
+        barColorWhenSelected="#2196f3"
+        activeColor="#ffffff"
+        title="Popular Movie" />
+    <tab
+        id="@+id/tab_toprated"
+        icon="@drawable/ic_dashboard_black_24dp"
+        barColorWhenSelected="#ff6d00"
+        activeColor="#ffffff"
+        title="Top Rated" />
+    <tab
+        id="@+id/tab_favorite"
+        icon="@drawable/ic_notifications_black_24dp"
+        activeColor="#ffffff"
+        barColorWhenSelected="#00e676"
+        title="Favorite" />
+
+</tabs>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.luminary.setyo.popularmovies.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layout_untuk_fragment"
+        android:layout_height="match_parent"
+        >
+
+    </FrameLayout>
+
+    <com.roughike.bottombar.BottomBar
+        android:layout_width="match_parent"
+        app:bb_tabXmlResource="@xml/bottom"
+        app:bb_behavior="underNavbar"
+        android:id="@+id/navigation"
+        app:bb_inActiveTabColor="#dfdade"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="60dp">
+
+    </com.roughike.bottombar.BottomBar>
+
+
+</android.support.constraint.ConstraintLayout>

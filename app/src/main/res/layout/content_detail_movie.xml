@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.luminary.setyo.popularmovies.DetailMovieActivity"
+    tools:showIn="@layout/activity_detail_movie">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:id="@+id/tvjudul"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="16dp"
+            android:text="Judul Film"
+            android:layout_height="wrap_content" />
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/rating"
+                    android:text="Rating :"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:id="@+id/txt_detail"
+                    android:textSize="16sp"
+                    android:text="@string/appbar_scrolling_view_behavior" />
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@android:color/darker_gray"
+            android:layout_height="1dp"/>
+
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:layout_width="match_parent"
+            android:id="@+id/youtube_view"
+            android:layout_height="wrap_content">
+
+        </com.google.android.youtube.player.YouTubePlayerView>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="50dp"
+            android:src="@drawable/ytb"
+            android:layout_gravity="center"
+            android:onClick="intentYoutube"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/textTileReview"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:textSize="16sp"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/recyclerview_review"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
